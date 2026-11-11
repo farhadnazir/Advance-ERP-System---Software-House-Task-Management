@@ -80,45 +80,47 @@ Here is a glimpse into the sophisticated interface and powerful modules of the s
 
 ## 🚀 Installation & Setup
 
-Want to run this locally? Follow these steps:
+> 🔒 The source code lives in a **private repository**. This repository is a showcase. For a live demo, or a system like this for your company, [get in touch](#-developed-by).
 
-1. **Clone the repository:**
+For those with access to the source:
+
+1. **Clone the repository**
    ```bash
-   git clone [https://github.com/farhadnazir/softhousepro-crm-hrm.git](https://github.com/farhadnazir/softhousepro-crm-hrm.git)
+   git clone https://github.com/farhadnazir/softhousepro-crm-hrm.git
    cd softhousepro-crm-hrm
-Install Composer & NPM Dependencies:
+   ```
+2. **Install Composer and NPM dependencies**
+   ```bash
+   composer install
+   npm install && npm run build
+   ```
+3. **Set up the environment** (then add your local database credentials to `.env`)
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+4. **Run migrations and seeders**
+   ```bash
+   php artisan migrate --seed
+   ```
+5. **Start the development server**
+   ```bash
+   php artisan serve
+   ```
 
-```bash
-composer install
-npm install && npm run build 
-```
+---
 
-Environment Setup:
+## 👨‍💻 Developed By
 
-```bash
-cp .env.example .env
-php artisan key:generate
-(Update your .env file with your local database credentials)
-```
-Run Migrations & Seeders:
+**Farhad Nazir**, Full-Stack Software Engineer | Founder @ Techwine Solutions
 
-```bash
-php artisan migrate --seed
-```
-Start the Development Server:
+* 🌐 **GitHub:** [github.com/farhadnazir](https://www.github.com/farhadnazir)
+* 💼 **LinkedIn:** [linkedin.com/in/farhadnazir](https://www.linkedin.com/in/farhadnazir)
+* 📫 **Email:** farhadnazir1111@gmail.com
 
-```bash
-php artisan serve
-```
-👨‍💻 Developed By
-Farhad Nazir
-Full-Stack Software Engineer | Founder @ Techwine Solutions
+> Also by me: [**Asaan Optics**](https://github.com/farhadnazir/Asaan-Optics-App-Official), POS and shop management for optical shops on Android, Windows and iPhone/iPad.
 
-🌐 GitHub Profile: https://www.github.com/farhadnazir
-
-💼 LinkedIn Profile: https://www.linkedin.com/in/farhadnazir
-
-“Architecting systems that don't just work, but scale beautifully.”
+*“Architecting systems that don't just work, but scale beautifully.”*
 
 <div align="center">
 <p>Show some ❤️ by starring this repository!</p>
